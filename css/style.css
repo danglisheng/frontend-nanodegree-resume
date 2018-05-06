@@ -13,7 +13,9 @@ h6 {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-
+img {
+  max-width: 100%;
+}
 .clear-fix {
   overflow: auto;
 }
@@ -23,7 +25,11 @@ h6 {
 .project-entry {
   padding: 0 5%;
 }
-
+.work-entry::after{
+  content:"";
+  display:block;
+  clear:both;
+}
 h1 {
   font-size: 40px;
   color: #f5a623;
@@ -129,7 +135,8 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+    background-image: url("../images/grass.jpg");
+    background-size:cover;
 }
 
 .flex-box {
